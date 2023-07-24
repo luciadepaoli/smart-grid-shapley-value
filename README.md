@@ -7,22 +7,11 @@ We investigate the application of a 2-steps Shapley value in a Smart Grid in ord
 
 **Abstract**: Smart Grid is an electrical grid that allows the management of the resources in an ”intelligent” way. This includes the smart allocation of supplies where it is needed, the trading of energy between consumers that are able to produce electricity (prosumer), the exchange of energy at low-level voltage to minimize the power loss and so on. In this research we use a coalitional game theoretical approach to study the trading price and the coalitions formation of a set of prosumers distributed around a Macro Grid. Our approach works through the computation of two set of Shapley values. The first one is used to establish the trading price in a coalition of prosumers, while the second one is used to evaluate the final gain (for sellers) or cost (for buyers), considering the Smart Grid trading price and the Macro Grid selling and buying price. Lastly, we simulate a simplified real-life scenario using the methods previously exposed.
 
-For more information, see the [paper]()
+For more information, see the [paper](https://github.com/luciadepaoli/smart-grid-shapley-value/blob/main/Smart_Grid_Depaoli_Fella.pdf)
 
-### Model formulation and simulation
+### Model formulation and variables
 Define an amount of prosumers in the variable `n_players`. Then fix the selling and buying price $p_{MG,s}$ and $p_{MG,b}$ in the variables `pv` and `pa`. Then we define the energy for each prosumer in the vector `energy`. If the value is negative, then the prosumer is a buyer, otherwise a seller. 
 
 Variables `U0` and `U1` refers, respectively, to the mean value of the voltage in the process prosumer-MG and to the mean value of the voltage in the process prosumer-prosumer. Variable `R` refers to the resistance of the distribution lines and `\beta` is the coefficient that quantify the power lost in the transformer at the M-G. We consider these values fixed.
 
-Finally, we set the distances between the houses and the M-G in the variable `d`, and the matrix of distances between houses in the variable `distance`
-
-
-
-, each of them connected to a Macro Grid. Each player has a total amount of energy $Q_i = E_i − D_i$, which is the difference between the produced energy $E_i$ and the demand of the house $D_i$. If $Q_i > 0$, then the prosumer is defined as a ”seller”, so she wants to sell the surplus of energy to other houses or to the Macro Grid, in order to make profit. If $Q_i < 0$, the prosumer is a ”buyer” and she needs to satisfy her demand.
-We want to understand which are the optimal coalitions and which is the total amount of money a player spends or gains in each configuration.
-
-### Trading price $p_{SG}$ computation
-The first step is to evaluate the trading price between players, $p_{SG}$. We suppose to have two fixed variables: $p_{MG,s}$ and $p_{MG,b}$. 
-
-For every possible coalition, we generate all the values of $v(S)$ and then we proceed to compute the Shapley values
-for each the player.
+Finally, we set the distances between the houses and the M-G in the variable `d`, and the matrix of distances between houses in the variable `distance`.
