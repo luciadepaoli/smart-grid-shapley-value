@@ -3,7 +3,7 @@
 
 **Authors**: Lucia Depaoli, Alessandro Fella
 
-We investigate the application of a 2-steps Shapley value in a Smart Grid in order to establish the trading price and to evaluate the total gain/cost for prosumers. A simulation is provided.
+**Project Summary**: Application of a 2-steps Shapley Value computation in a Smart Grid scenario, in order to establish the trading price and to evaluate the total gain/cost for prosumers.
 
 **Abstract**: Smart Grid is an electrical grid that allows the management of the resources in an ”intelligent” way. This includes the smart allocation of supplies where it is needed, the trading of energy between consumers that are able to produce electricity (prosumer), the exchange of energy at low-level voltage to minimize the power loss and so on. In this research we use a coalitional game theoretical approach to study the trading price and the coalitions formation of a set of prosumers distributed around a Macro Grid. Our approach works through the computation of two set of Shapley values. The first one is used to establish the trading price in a coalition of prosumers, while the second one is used to evaluate the final gain (for sellers) or cost (for buyers), considering the Smart Grid trading price and the Macro Grid selling and buying price. Lastly, we simulate a simplified real-life scenario using the methods previously exposed.
 
